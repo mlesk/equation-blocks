@@ -1,10 +1,12 @@
+/*@flow*/
+
 import Equation from '../domain/Equation';
 import Codes from './CharacterCodes';
 
 const nwl = Codes.newLine;
 const degrees = Codes.degrees;
 
-const all = [
+const all: Array<Equation> = [
 
   new Equation(
     'Temperature',

@@ -18,5 +18,22 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/react-scripts/config/eslint.js",
+    "rules": {
+      "import/no-unresolved": [1, {
+        "commonjs": true
+      }],
+      "import/named": 1,
+      "import/namespace": 1,
+      "import/default": 1,
+      "import/export": 1,
+      "import/no-amd": 1,
+      "import/no-duplicates": 1,
+      "import/no-extraneous-dependencies": 1,
+      "import/no-named-as-default": 1,
+      "import/no-named-as-default-member": 1
+    }
   }
 }
